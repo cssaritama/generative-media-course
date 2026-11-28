@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "run_id": "20261128T145007Z-live",
+  "steps": 2,
+  "judge_calls": 1,
+  "attempts": {
+    "keyframe": 1,
+    "video": 1
+  },
+  "accept_rate": 1.0,
+  "rejected_share": 0.0,
+  "llm_tokens": 1832,
+  "latency_s": [
+    5.94
+  ],
+  "video_latency_s": [
+    57.42
+  ],
+  "cost_by_step": {
+    "llm": 0.0001,
+    "keyframe": 0.0013,
+    "judge": 0.0003,
+    "video": 0.0134
+  },
+  "marginal_cost_usd": 0.0151,
+  "possible_duplicates": 0,
+  "stop_reason": "done"
+}

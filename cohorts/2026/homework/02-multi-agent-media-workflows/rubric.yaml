@@ -1,0 +1,39 @@
+# Rubric v1 for the keyframe judge (Module 2)
+# Score anchors: 0 = fails, 0.5 = partly, 1 = clearly meets it.
+version: v1
+criteria:
+  - id: must_show
+    brief_field: must_show
+    question: Is every item in must_show clearly visible?
+    must_have: true
+    scope: keyframe
+    pass_example: all listed items are in frame and recognisable
+    fail_example: one item is missing, cut off or hidden
+  - id: must_not
+    brief_field: must_not
+    question: Is the image free of everything in must_not?
+    must_have: true
+    scope: keyframe
+    pass_example: no logos, brand names, modern objects or readable text anywhere
+    fail_example: a modern item, neon sign, watermark or legible text on screen
+  - id: shot
+    brief_field: shot
+    question: Does the image show the moment the shot describes?
+    must_have: true
+    scope: keyframe
+    pass_example: the setting, the characters and the action match the shot
+    fail_example: a different setting, or the wrong moment
+  - id: audience
+    brief_field: audience
+    question: Would the audience recognise the mythic and symbolic tone of the scene?
+    must_have: false
+    scope: keyframe
+    pass_example: cinematic, solemn, mythic atmosphere fitting depth psychology
+    fail_example: cartoonish, slapstick, or incoherent setting
+  - id: motion
+    brief_field: shot
+    question: Does the action in the shot happen in the clip?
+    must_have: true
+    scope: video_only
+    pass_example: subtle candlelit motion and breathing/posture shifts happen smoothly
+    fail_example: nothing moves, or the subject deforms
